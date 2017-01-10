@@ -40,6 +40,8 @@ public class RESTServer {
         Set<Object> resourceObjs = new HashSet<Object>();
         resourceObjs.add(new ResourceImpl());
         resourceObjs.add(new AsyncResourceImpl());
+        resourceObjs.add(new PoweredByResponseFilter()); // RESPONSE FILTER
+        resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 
         String serverURI = "http://" + REST_SERVER_IP + "/";
