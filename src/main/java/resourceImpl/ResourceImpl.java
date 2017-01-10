@@ -1,3 +1,5 @@
+package resourceImpl;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -29,7 +31,7 @@ public class ResourceImpl {
     public String pathMethod(@PathParam("var") String name) {
         return "Hello, " + name;
     }
-    //http://localhost:2222/home/path/abhi
+    // http://localhost:9797/home/path/abhi
 
     @POST
     @Path("post")

@@ -20,6 +20,9 @@ import io.netty.channel.Channel;
 import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
+import resourceImpl.AsyncResourceImpl;
+import resourceImpl.ResourceImpl;
+import resourceImpl.SecuredResource;
 
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
@@ -42,6 +45,10 @@ public class RESTServer {
         resourceObjs.add(new AsyncResourceImpl());
         resourceObjs.add(new PoweredByResponseFilter()); // RESPONSE FILTER
         resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
+
+        resourceObjs.add(new SecuredResource());
+        resourceObjs.add(new SecurityFilter());
+
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 
         String serverURI = "http://" + REST_SERVER_IP + "/";
