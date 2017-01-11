@@ -1,17 +1,16 @@
 # Build REST API from scratch 
 
 
-Server : Netty
+**Server:** Netty
 
-Framework: Jersey 
+**Framework:** Jersey 
 
-Underlying Library: JAX-RS
+**Underlying Library:** JAX-RS
 
-POJOs to Json and vice-versa: Jackson
+**POJOs to JSON and vice-versa:** Jackson (Contains class which implements MessageBodyWriter)
+Accept the Class type as argumentd to bind to request body.
 
-Project management : Gradle
-
-
+**Project management:** Gradle
 
 REST API Application = Application Code + Jersey framework
 Jersey framework = JAX-RS (interfaces and annotations) + Implementation Classes
@@ -39,4 +38,14 @@ MessageBodyWriter : POJO to Payload
 #### HATEOS
 The responses have links that control the application state of the client. 
 HATEOAS stands for Hypertext As The Engine Of Application State. 
-It means that hypertext should be used to find your way through the API. 
+It means that hypertext should be used to find your way through the API.
+ 
+Model Classes:
+Contains the Data
+
+Service Classes:
+Manipulate the Data
+
+Resource Classes:
+Call the service from Resource class.
+

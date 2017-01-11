@@ -7,9 +7,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by root on 1/10/17.
@@ -24,11 +22,27 @@ public class ListImpl {
     @GET
     @Path("/names")
     @Produces(MediaType.TEXT_PLAIN)
-    public String listNames(@QueryParam("limit") String limit, @QueryParam("offset") String offset){
+    public String getNames(@QueryParam("limit") int limit, @QueryParam("offset") int offset){
         List<String> list = Arrays.asList("a "," b"," c","d ","e ","f ","g ","h ","i ",
                 "j ","k ","l ","m ","n ","o ","p ","q ","r ","s ","t ","u ","v ","w ","x ","y ", "z ");
-        List<String> sublist = list.subList(Integer.parseInt(offset), Integer.parseInt(offset)+Integer.parseInt(limit) );
+        //List<String> sublist = list.subList(Integer.parseInt(offset), Integer.parseInt(offset)+Integer.parseInt(limit) );
+        List<String> sublist = list.subList(offset, offset+limit );
         //return Response.ok(sublist).status(200).build();
         return sublist.toString();
+    }
+
+    // Anything with Key and Value can be returned as Json
+    // List can't be returned as JSON, Map can be returned as JSON
+    @GET
+    @Path("/names/values")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Map getNamesMap(){
+        Map<String, Integer> map = new HashMap<>();
+        map.put("a",1);
+        map.put("b",2);
+        map.put("c",3);
+        map.put("d",4);
+        map.put("e",5);
+        return map;
     }
 }
