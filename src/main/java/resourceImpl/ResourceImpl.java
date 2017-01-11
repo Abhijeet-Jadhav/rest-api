@@ -21,9 +21,10 @@ public class ResourceImpl {
     @GET
     @Path("param")
     @Produces(MediaType.APPLICATION_JSON)
-    public String paramMethod(@QueryParam("name") String name) {
-        return "Hello, " + name;
+    public String queryParamMethod(@QueryParam("name") String name, @QueryParam("lastname") String lastname) {
+        return "Hello, " + name + " "+ lastname;
     }
+    // http://localhost:9797/home/param?name=abhi&lastname=jadhav
 
     @GET
     @Path("path/{var}")

@@ -2,7 +2,41 @@
 
 
 Server : Netty
+
 Framework: Jersey 
+
 Underlying Library: JAX-RS
 
 POJOs to Json and vice-versa: Jackson
+
+Project management : Gradle
+
+
+
+REST API Application = Application Code + Jersey framework
+Jersey framework = JAX-RS (interfaces and annotations) + Implementation Classes
+
+#### Jersey
+Jersey is the reference implementation of JAX-RS specification.
+JAX-RS is an specification (just a definition) and Jersey is a JAX-RS implementation.
+ 
+
+
+
+
+#### Filters Vs Interceptors
+* Filter: used to modify the request and response params (headers, URIs)
+eg. SecurityFilter, LoggingFilter
+
+* Interceptor: used to manipulate entities (input and output streams)
+eg Gzip - to encode the body of message
+
+#### MessageBodyReader Vs MessageBodyWriter
+
+MessageBodyReader : Payload to POJO
+MessageBodyWriter : POJO to Payload
+ 
+#### HATEOS
+The responses have links that control the application state of the client. 
+HATEOAS stands for Hypertext As The Engine Of Application State. 
+It means that hypertext should be used to find your way through the API. 

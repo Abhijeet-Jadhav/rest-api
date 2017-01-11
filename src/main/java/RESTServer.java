@@ -21,6 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
 import resourceImpl.AsyncResourceImpl;
+import resourceImpl.ListImpl;
 import resourceImpl.ResourceImpl;
 import resourceImpl.SecuredResource;
 
@@ -41,13 +42,17 @@ public class RESTServer {
     public static final void start() {
 
         Set<Object> resourceObjs = new HashSet<Object>();
-        resourceObjs.add(new ResourceImpl());
-        resourceObjs.add(new AsyncResourceImpl());
+        resourceObjs.add(new ResourceImpl()); // basic calls - synchronous
+
+        resourceObjs.add(new AsyncResourceImpl()); // asynchronous calls
+
         resourceObjs.add(new PoweredByResponseFilter()); // RESPONSE FILTER
         resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
 
         resourceObjs.add(new SecuredResource());
-        resourceObjs.add(new SecurityFilter());
+        resourceObjs.add(new SecurityFilter()); // for authentication
+
+        resourceObjs.add(new ListImpl()); // pagination
 
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 

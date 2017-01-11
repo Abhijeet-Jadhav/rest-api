@@ -11,3 +11,5 @@ REST APIs are stateless, we cannot have session-cookie based authentication.
 
 Basic Auth:
 Look for specific key in request header.
+
+
