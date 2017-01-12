@@ -1,5 +1,8 @@
 package resourceImpl;
 
+import model.SampleRequest;
+import model.SampleResponse;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 
@@ -50,7 +53,7 @@ public class ResourceImpl {
     }
 
     @GET
-    @Path("context")
+    @Path("context")  // http://localhost:9797/home/context
     @Produces(MediaType.TEXT_PLAIN)
     public String getParamsUsingContext(@Context UriInfo uriInfo, @Context HttpHeaders httpHeaders) {
         return "Absolute path " +uriInfo.getAbsolutePath()
@@ -58,5 +61,23 @@ public class ResourceImpl {
                 +"\nHeaders "+httpHeaders.getRequestHeaders()
                 +"\n cookies "+httpHeaders.getCookies();
     }
-    // http://localhost:9797/home/context
+
+
+    @POST
+    @Path("pojo")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response jsonToPojo(SampleRequest sampleRequest){
+        SampleResponse sampleResponse = new SampleResponse();
+        sampleResponse.setText("first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName()+" age="+sampleRequest.getAge());
+        return Response.ok(sampleResponse).build();
+    }
+    // POST at http://localhost:9797/home/pojo
+    // { "firstName": "abc", "lastName": "def", "age": 50}
+
+
+    @Path("/subresource/{subResource}")
+    public SubResourceImpl getCommentResource() {
+        return new SubResourceImpl();
+    }
 }

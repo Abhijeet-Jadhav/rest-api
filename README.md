@@ -1,6 +1,5 @@
 # Build REST API from scratch 
 
-
 **Server:** Netty
 
 **Framework:** Jersey 
@@ -36,6 +35,7 @@ The responses have links that control the application state of the client.
 HATEOAS stands for Hypertext As The Engine Of Application State. 
 It means that hypertext should be used to find your way through the API.
  
+ #### Structure
 Model Classes:
 Contains the Data
 
@@ -48,10 +48,10 @@ Call the service from Resource class.
 POST is done on a collections URL.
 PUT is done on a instance URL.
 
-@Context annotation:
+#### @Context annotation
 @Context can be used to obtain contextual Java types related to the request or response.
 This annotation is used to inject information into a class field, bean property or method parameter.
 
-Content Negotiation:
+#### Content Negotiation
 Accept header maps to @Produces annotation
 Content-Type header maps to @Consumes annotation  
