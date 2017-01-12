@@ -18,10 +18,6 @@ Jersey framework = JAX-RS (interfaces and annotations) + Implementation Classes
 #### Jersey
 Jersey is the reference implementation of JAX-RS specification.
 JAX-RS is an specification (just a definition) and Jersey is a JAX-RS implementation.
- 
-
-
-
 
 #### Filters Vs Interceptors
 * Filter: used to modify the request and response params (headers, URIs)
@@ -48,4 +44,7 @@ Manipulate the Data
 
 Resource Classes:
 Call the service from Resource class.
+
+POST is done on a collections URL.
+PUT is done on a instance URL.
 

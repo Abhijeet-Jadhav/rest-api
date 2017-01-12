@@ -33,6 +33,7 @@ public class ListImpl {
 
     // Anything with Key and Value can be returned as Json
     // List can't be returned as JSON, Map can be returned as JSON
+    // http://localhost:9797/list/names/values
     @GET
     @Path("/names/values")
     @Produces(MediaType.APPLICATION_JSON)
