@@ -1,8 +1,7 @@
 package resourceImpl;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.core.*;
 
 /**
  * Created by root on 12/18/16.
@@ -50,4 +49,14 @@ public class ResourceImpl {
         return Response.ok(new Object(){ public String data = "hello world";}).build();
     }
 
+    @GET
+    @Path("context")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getParamsUsingContext(@Context UriInfo uriInfo, @Context HttpHeaders httpHeaders) {
+        return "Absolute path " +uriInfo.getAbsolutePath()
+                +"\n query params"+uriInfo.getQueryParameters()
+                +"\nHeaders "+httpHeaders.getRequestHeaders()
+                +"\n cookies "+httpHeaders.getCookies();
+    }
+    // http://localhost:9797/home/context
 }

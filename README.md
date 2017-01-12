@@ -48,3 +48,10 @@ Call the service from Resource class.
 POST is done on a collections URL.
 PUT is done on a instance URL.
 
+@Context annotation:
+@Context can be used to obtain contextual Java types related to the request or response.
+This annotation is used to inject information into a class field, bean property or method parameter.
+
+Content Negotiation:
+Accept header maps to @Produces annotation
+Content-Type header maps to @Consumes annotation  
