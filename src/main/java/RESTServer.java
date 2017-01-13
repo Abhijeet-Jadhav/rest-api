@@ -16,7 +16,10 @@
  * limitations under the License.
  */
 
+import advanced.jaxrs.MyApp;
+import advanced.jaxrs.MyResource;
 import io.netty.channel.Channel;
+//import lombok.extern.slf4j.Slf4j;
 import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -35,7 +38,7 @@ import java.util.Set;
 /**
  * Netty REST server implementation.
  */
-@Slf4j
+
 public class RESTServer {
 
     final static String REST_SERVER_IP = "localhost";
@@ -57,9 +60,11 @@ public class RESTServer {
 
         resourceObjs.add(new MessageResource()); // messenger tutorial
 
+        resourceObjs.add(new MyResource());
+
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 
-        String serverURI = "http://" + REST_SERVER_IP + "/";
+        String serverURI = "http://" + REST_SERVER_IP + "/pravega";
         URI baseUri = UriBuilder.fromUri(serverURI).port(REST_SERVER_PORT).build();
         ResourceConfig resourceConfig = ResourceConfig.forApplication(restApplication);
         Channel server = null;

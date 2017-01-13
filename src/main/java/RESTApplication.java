@@ -35,6 +35,6 @@ public class RESTApplication extends Application {
 
     @Override
     public Set<Object> getSingletons() {
-        return resource;
+         return resource;
     }
 }
