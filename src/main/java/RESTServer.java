@@ -24,6 +24,7 @@ import resourceImpl.AsyncResourceImpl;
 import resourceImpl.ListImpl;
 import resourceImpl.ResourceImpl;
 import resourceImpl.SecuredResource;
+import tut.messenger.resources.MessageResource;
 
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
@@ -53,6 +54,8 @@ public class RESTServer {
         resourceObjs.add(new SecurityFilter()); // for authentication
 
         resourceObjs.add(new ListImpl()); // pagination
+
+        resourceObjs.add(new MessageResource()); // messenger tutorial
 
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 

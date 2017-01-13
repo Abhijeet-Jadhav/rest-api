@@ -35,7 +35,7 @@ The responses have links that control the application state of the client.
 HATEOAS stands for Hypertext As The Engine Of Application State. 
 It means that hypertext should be used to find your way through the API.
  
- #### Structure
+#### Structure
 Model Classes:
 Contains the Data
 
