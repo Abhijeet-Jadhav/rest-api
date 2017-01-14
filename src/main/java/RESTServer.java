@@ -20,6 +20,8 @@ import advanced.jaxrs.MyApp;
 import advanced.jaxrs.MyResource;
 import io.netty.channel.Channel;
 //import lombok.extern.slf4j.Slf4j;
+import io.swagger.jaxrs.listing.ApiListingResource;
+import io.swagger.jaxrs.listing.SwaggerSerializers;
 import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -62,16 +64,19 @@ public class RESTServer {
 
         resourceObjs.add(new MyResource());
 
+        resourceObjs.add(new ApiListingResource()); //swagger
+        resourceObjs.add(new SwaggerSerializers()); //swagger
+
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 
-        String serverURI = "http://" + REST_SERVER_IP + "/pravega";
+        String serverURI = "http://" + REST_SERVER_IP + "/";
         URI baseUri = UriBuilder.fromUri(serverURI).port(REST_SERVER_PORT).build();
         ResourceConfig resourceConfig = ResourceConfig.forApplication(restApplication);
         Channel server = null;
         try {
             server = NettyHttpContainerProvider.createServer(baseUri, resourceConfig, true);
         } catch (Exception e) {
-            System.out.println("Error starting Rest Service {}"+ e);
+            System.out.println("Error starting Rest Service "+ e);
             server.close();
         }
     }

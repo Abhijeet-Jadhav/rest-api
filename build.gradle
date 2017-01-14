@@ -16,4 +16,7 @@ dependencies {
     //compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0.1' // this is an internal dependency of netty
     compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-netty-http', version: '2.25'
     compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.25'
+    compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.12'
+    compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+
 }

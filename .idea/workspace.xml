@@ -2,20 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0b8f37f-8932-4f37-871c-43dc5f37cb57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_14.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_annotations_2_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_annotations_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_core_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_jaxrs_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_jersey2_jaxrs_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_models_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_servlet_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jersey_containers_jersey_container_servlet_core_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jersey_media_jersey_media_multipart_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jvnet_mimepull_mimepull_1_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reflections_reflections_0_9_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_6_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swagger.md" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/AsyncResourceImpl$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ResourceImpl$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ResourceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/Main.class" afterPath="$PROJECT_DIR$/build/classes/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/RESTApplication.class" afterPath="$PROJECT_DIR$/build/classes/main/RESTApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/RESTServer.class" afterPath="$PROJECT_DIR$/build/classes/main/RESTServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/advanced/jaxrs/MyResource.class" afterPath="$PROJECT_DIR$/build/classes/main/advanced/jaxrs/MyResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/resourceImpl/ResourceImpl$1.class" afterPath="$PROJECT_DIR$/build/classes/main/resourceImpl/ResourceImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/resourceImpl/ResourceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/resourceImpl/ResourceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/rest-api.iml" afterPath="$PROJECT_DIR$/.idea/modules/rest-api.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java" afterPath="$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTApplication.java" afterPath="$PROJECT_DIR$/src/main/java/RESTApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTServer.java" afterPath="$PROJECT_DIR$/src/main/java/RESTServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java" afterPath="$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -78,233 +98,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tut/messenger/model/Profile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#538#539#0" expanded="false" />
-                <element signature="e#554#555#0" expanded="false" />
-                <element signature="e#584#585#0" expanded="false" />
-                <element signature="e#603#604#0" expanded="false" />
-                <element signature="e#637#638#0" expanded="false" />
-                <element signature="e#662#663#0" expanded="false" />
-                <element signature="e#712#713#0" expanded="false" />
-                <element signature="e#749#750#0" expanded="false" />
-                <element signature="e#781#782#0" expanded="false" />
-                <element signature="e#804#805#0" expanded="false" />
-                <element signature="e#850#851#0" expanded="false" />
-                <element signature="e#883#884#0" expanded="false" />
-                <element signature="e#914#915#0" expanded="false" />
-                <element signature="e#936#937#0" expanded="false" />
-                <element signature="e#980#981#0" expanded="false" />
-                <element signature="e#1011#1012#0" expanded="false" />
-                <element signature="e#1039#1040#0" expanded="false" />
-                <element signature="e#1060#1061#0" expanded="false" />
-                <element signature="e#1100#1101#0" expanded="false" />
-                <element signature="e#1129#1130#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tut/messenger/resources/MessageResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tut/messenger/service/MessageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#810#811#0" expanded="false" />
-                <element signature="e#840#841#0" expanded="false" />
-                <element signature="e#1196#1197#0" expanded="false" />
-                <element signature="e#1229#1230#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectMapper.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.4/2b4edfb6d6bad1710951837b4911eddd1415228f/jackson-databind-2.8.4-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49555">
-              <caret line="3050" column="18" lean-forward="false" selection-start-line="3050" selection-start-column="18" selection-end-line="3050" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#9704#9705#0" expanded="false" />
-                <element signature="e#9743#9744#0" expanded="false" />
-                <element signature="e#20007#20008#0" expanded="false" />
-                <element signature="e#20045#20046#0" expanded="false" />
-                <element signature="e#20263#20264#0" expanded="false" />
-                <element signature="e#20299#20300#0" expanded="false" />
-                <element signature="e#24676#24677#0" expanded="false" />
-                <element signature="e#24727#24728#0" expanded="false" />
-                <element signature="e#26486#26487#0" expanded="false" />
-                <element signature="e#26539#26540#0" expanded="false" />
-                <element signature="e#27224#27225#0" expanded="false" />
-                <element signature="e#27277#27278#0" expanded="false" />
-                <element signature="e#28279#28280#0" expanded="false" />
-                <element signature="e#28359#28360#0" expanded="false" />
-                <element signature="e#30305#30306#0" expanded="false" />
-                <element signature="e#30353#30354#0" expanded="false" />
-                <element signature="e#30650#30651#0" expanded="false" />
-                <element signature="e#30701#30702#0" expanded="false" />
-                <element signature="e#30792#30793#0" expanded="false" />
-                <element signature="e#30850#30851#0" expanded="false" />
-                <element signature="e#30938#30939#0" expanded="false" />
-                <element signature="e#30996#30997#0" expanded="false" />
-                <element signature="e#31094#31095#0" expanded="false" />
-                <element signature="e#31152#31153#0" expanded="false" />
-                <element signature="e#31237#31238#0" expanded="false" />
-                <element signature="e#31295#31296#0" expanded="false" />
-                <element signature="e#31379#31380#0" expanded="false" />
-                <element signature="e#31437#31438#0" expanded="false" />
-                <element signature="e#31524#31525#0" expanded="false" />
-                <element signature="e#31582#31583#0" expanded="false" />
-                <element signature="e#31717#31718#0" expanded="false" />
-                <element signature="e#31783#31784#0" expanded="false" />
-                <element signature="e#35568#35569#0" expanded="false" />
-                <element signature="e#35633#35634#0" expanded="false" />
-                <element signature="e#35722#35723#0" expanded="false" />
-                <element signature="e#35787#35788#0" expanded="false" />
-                <element signature="e#36264#36265#0" expanded="false" />
-                <element signature="e#36336#36337#0" expanded="false" />
-                <element signature="e#37600#37601#0" expanded="false" />
-                <element signature="e#37640#37641#0" expanded="false" />
-                <element signature="e#38789#38790#0" expanded="false" />
-                <element signature="e#38842#38843#0" expanded="false" />
-                <element signature="e#39453#39454#0" expanded="false" />
-                <element signature="e#39496#39497#0" expanded="false" />
-                <element signature="e#39930#39931#0" expanded="false" />
-                <element signature="e#39975#39976#0" expanded="false" />
-                <element signature="e#40328#40329#0" expanded="false" />
-                <element signature="e#40374#40375#0" expanded="false" />
-                <element signature="e#41170#41171#0" expanded="false" />
-                <element signature="e#41211#41212#0" expanded="false" />
-                <element signature="e#42010#42011#0" expanded="false" />
-                <element signature="e#42052#42053#0" expanded="false" />
-                <element signature="e#42411#42412#0" expanded="false" />
-                <element signature="e#42475#42476#0" expanded="false" />
-                <element signature="e#45129#45130#0" expanded="false" />
-                <element signature="e#45182#45183#0" expanded="false" />
-                <element signature="e#45238#45239#0" expanded="false" />
-                <element signature="e#45280#45281#0" expanded="false" />
-                <element signature="e#45480#45481#0" expanded="false" />
-                <element signature="e#45519#45520#0" expanded="false" />
-                <element signature="e#45739#45740#0" expanded="false" />
-                <element signature="e#45784#45785#0" expanded="false" />
-                <element signature="e#46242#46243#0" expanded="false" />
-                <element signature="e#46315#46316#0" expanded="false" />
-                <element signature="e#46496#46497#0" expanded="false" />
-                <element signature="e#46529#46530#0" expanded="false" />
-                <element signature="e#48524#48525#0" expanded="false" />
-                <element signature="e#48563#48564#0" expanded="false" />
-                <element signature="e#52707#52708#0" expanded="false" />
-                <element signature="e#52788#52789#0" expanded="false" />
-                <element signature="e#55717#55718#0" expanded="false" />
-                <element signature="e#55762#55763#0" expanded="false" />
-                <element signature="e#56668#56669#0" expanded="false" />
-                <element signature="e#56730#56731#0" expanded="false" />
-                <element signature="e#57133#57134#0" expanded="false" />
-                <element signature="e#57193#57194#0" expanded="false" />
-                <element signature="e#58140#58141#0" expanded="false" />
-                <element signature="e#58208#58209#0" expanded="false" />
-                <element signature="e#58532#58533#0" expanded="false" />
-                <element signature="e#58567#58568#0" expanded="false" />
-                <element signature="e#59275#59276#0" expanded="false" />
-                <element signature="e#59327#59328#0" expanded="false" />
-                <element signature="e#59893#59894#0" expanded="false" />
-                <element signature="e#59955#59956#0" expanded="false" />
-                <element signature="e#66860#66861#0" expanded="false" />
-                <element signature="e#66900#66901#0" expanded="false" />
-                <element signature="e#69611#69612#0" expanded="false" />
-                <element signature="e#69667#69668#0" expanded="false" />
-                <element signature="e#71724#71725#0" expanded="false" />
-                <element signature="e#71782#71783#0" expanded="false" />
-                <element signature="e#73785#73786#0" expanded="false" />
-                <element signature="e#73857#73858#0" expanded="false" />
-                <element signature="e#75511#75512#0" expanded="false" />
-                <element signature="e#75581#75582#0" expanded="false" />
-                <element signature="e#77349#77350#0" expanded="false" />
-                <element signature="e#77397#77398#0" expanded="false" />
-                <element signature="e#98474#98475#0" expanded="false" />
-                <element signature="e#98549#98550#0" expanded="false" />
-                <element signature="e#98835#98836#0" expanded="false" />
-                <element signature="e#98909#98910#0" expanded="false" />
-                <element signature="e#99164#99165#0" expanded="false" />
-                <element signature="e#99231#99232#0" expanded="false" />
-                <element signature="e#122988#122989#0" expanded="false" />
-                <element signature="e#123047#123048#0" expanded="false" />
-                <element signature="e#123977#123978#0" expanded="false" />
-                <element signature="e#124045#124046#0" expanded="false" />
-                <element signature="e#128587#128588#0" expanded="false" />
-                <element signature="e#128660#128661#0" expanded="false" />
-                <element signature="e#128872#128873#0" expanded="false" />
-                <element signature="e#128943#128944#0" expanded="false" />
-                <element signature="e#130559#130560#0" expanded="false" />
-                <element signature="e#130644#130645#0" expanded="false" />
-                <element signature="e#133604#133605#0" expanded="false" />
-                <element signature="e#133673#133674#0" expanded="false" />
-                <element signature="e#134687#134688#0" expanded="false" />
-                <element signature="e#134763#134764#0" expanded="false" />
-                <element signature="e#135308#135309#0" expanded="false" />
-                <element signature="e#135381#135382#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="136">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyApp.java">
+      <file leaf-file-name="ResourceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swagger.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swagger.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="340">
+                <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="30" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SampleRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/SampleRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoweredByResponseFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -312,11 +164,9 @@
       <file leaf-file-name="RESTServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="663">
+              <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -324,12 +174,9 @@
       <file leaf-file-name="RESTApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RESTApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -519,7 +366,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2968290932273" />
+        <entry key="$PROJECT_DIR$" value="2968376355909" />
         <entry key="$USER_HOME$/caspian-common-services" value="4446422955449" />
         <entry key="$USER_HOME$/imagerepository" value="4446860682788" />
         <entry key="$USER_HOME$/imagerepository/server" value="1482189586000" />
@@ -700,7 +547,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ResourceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/AsyncResourceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/LoggingFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Asynchronous-Notes.md" />
         <option value="$PROJECT_DIR$/src/main/java/resourceImpl/SecuredResource.java" />
@@ -710,19 +556,21 @@
         <option value="$PROJECT_DIR$/src/main/java/resourceImpl/SampleResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/resourceImpl/SampleRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SampleResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/resourceImpl/SubResourceImpl.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/tut/messenger/database/DatabaseClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/tut/messenger/model/JsonMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/tut/messenger/service/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/tut/messenger/resources/MessageResource.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/RESTServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RESTApplication.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java" />
+        <option value="$PROJECT_DIR$/swagger.md" />
+        <option value="$PROJECT_DIR$/src/main/java/RESTApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java" />
       </list>
     </option>
   </component>
@@ -732,7 +580,9 @@
     <option name="width" value="1863" />
     <option name="height" value="941" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -748,6 +598,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -770,7 +621,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.4" />
+              <option name="myItemId" value="Gradle: io.swagger:swagger-jaxrs:1.5.12" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -860,14 +711,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jaxrs" />
+              <option name="myItemId" value="resourceImpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1312,13 +1188,16 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1484307548077" />
+    <option name="lastUpdateTimestamp" value="1484392983941" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1346,19 +1225,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.49807587" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32360098" sideWeight="0.50825083" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32349467" sideWeight="0.49174917" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32603407" sideWeight="0.49367785" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31286895" sideWeight="0.49174917" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32585597" sideWeight="0.49367785" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39294404" sideWeight="0.49367785" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41912633" sideWeight="0.49367785" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20395821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09015943" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1386,33 +1265,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/resourceImpl/AsyncResourceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resourceImpl/SecuredResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SecurityFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Authentication-Notes.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1432,9 +1289,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,7 +1336,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1501,9 +1355,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1549,9 +1401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1583,13 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1635,34 +1478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/SampleRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="257">
-            <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resourceImpl/SecuredResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1691,7 +1510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1699,12 +1517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding>
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#436#437#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1713,7 +1525,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="238">
             <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1723,12 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#810#811#0" expanded="false" />
-            <element signature="e#840#841#0" expanded="false" />
-            <element signature="e#1196#1197#0" expanded="false" />
-            <element signature="e#1229#1230#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1736,7 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1744,37 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#584#585#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#804#805#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-            <element signature="e#914#915#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#980#981#0" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1060#1061#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1782,176 +1555,112 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49555">
           <caret line="3050" column="18" lean-forward="false" selection-start-line="3050" selection-start-column="18" selection-end-line="3050" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#9704#9705#0" expanded="false" />
-            <element signature="e#9743#9744#0" expanded="false" />
-            <element signature="e#20007#20008#0" expanded="false" />
-            <element signature="e#20045#20046#0" expanded="false" />
-            <element signature="e#20263#20264#0" expanded="false" />
-            <element signature="e#20299#20300#0" expanded="false" />
-            <element signature="e#24676#24677#0" expanded="false" />
-            <element signature="e#24727#24728#0" expanded="false" />
-            <element signature="e#26486#26487#0" expanded="false" />
-            <element signature="e#26539#26540#0" expanded="false" />
-            <element signature="e#27224#27225#0" expanded="false" />
-            <element signature="e#27277#27278#0" expanded="false" />
-            <element signature="e#28279#28280#0" expanded="false" />
-            <element signature="e#28359#28360#0" expanded="false" />
-            <element signature="e#30305#30306#0" expanded="false" />
-            <element signature="e#30353#30354#0" expanded="false" />
-            <element signature="e#30650#30651#0" expanded="false" />
-            <element signature="e#30701#30702#0" expanded="false" />
-            <element signature="e#30792#30793#0" expanded="false" />
-            <element signature="e#30850#30851#0" expanded="false" />
-            <element signature="e#30938#30939#0" expanded="false" />
-            <element signature="e#30996#30997#0" expanded="false" />
-            <element signature="e#31094#31095#0" expanded="false" />
-            <element signature="e#31152#31153#0" expanded="false" />
-            <element signature="e#31237#31238#0" expanded="false" />
-            <element signature="e#31295#31296#0" expanded="false" />
-            <element signature="e#31379#31380#0" expanded="false" />
-            <element signature="e#31437#31438#0" expanded="false" />
-            <element signature="e#31524#31525#0" expanded="false" />
-            <element signature="e#31582#31583#0" expanded="false" />
-            <element signature="e#31717#31718#0" expanded="false" />
-            <element signature="e#31783#31784#0" expanded="false" />
-            <element signature="e#35568#35569#0" expanded="false" />
-            <element signature="e#35633#35634#0" expanded="false" />
-            <element signature="e#35722#35723#0" expanded="false" />
-            <element signature="e#35787#35788#0" expanded="false" />
-            <element signature="e#36264#36265#0" expanded="false" />
-            <element signature="e#36336#36337#0" expanded="false" />
-            <element signature="e#37600#37601#0" expanded="false" />
-            <element signature="e#37640#37641#0" expanded="false" />
-            <element signature="e#38789#38790#0" expanded="false" />
-            <element signature="e#38842#38843#0" expanded="false" />
-            <element signature="e#39453#39454#0" expanded="false" />
-            <element signature="e#39496#39497#0" expanded="false" />
-            <element signature="e#39930#39931#0" expanded="false" />
-            <element signature="e#39975#39976#0" expanded="false" />
-            <element signature="e#40328#40329#0" expanded="false" />
-            <element signature="e#40374#40375#0" expanded="false" />
-            <element signature="e#41170#41171#0" expanded="false" />
-            <element signature="e#41211#41212#0" expanded="false" />
-            <element signature="e#42010#42011#0" expanded="false" />
-            <element signature="e#42052#42053#0" expanded="false" />
-            <element signature="e#42411#42412#0" expanded="false" />
-            <element signature="e#42475#42476#0" expanded="false" />
-            <element signature="e#45129#45130#0" expanded="false" />
-            <element signature="e#45182#45183#0" expanded="false" />
-            <element signature="e#45238#45239#0" expanded="false" />
-            <element signature="e#45280#45281#0" expanded="false" />
-            <element signature="e#45480#45481#0" expanded="false" />
-            <element signature="e#45519#45520#0" expanded="false" />
-            <element signature="e#45739#45740#0" expanded="false" />
-            <element signature="e#45784#45785#0" expanded="false" />
-            <element signature="e#46242#46243#0" expanded="false" />
-            <element signature="e#46315#46316#0" expanded="false" />
-            <element signature="e#46496#46497#0" expanded="false" />
-            <element signature="e#46529#46530#0" expanded="false" />
-            <element signature="e#48524#48525#0" expanded="false" />
-            <element signature="e#48563#48564#0" expanded="false" />
-            <element signature="e#52707#52708#0" expanded="false" />
-            <element signature="e#52788#52789#0" expanded="false" />
-            <element signature="e#55717#55718#0" expanded="false" />
-            <element signature="e#55762#55763#0" expanded="false" />
-            <element signature="e#56668#56669#0" expanded="false" />
-            <element signature="e#56730#56731#0" expanded="false" />
-            <element signature="e#57133#57134#0" expanded="false" />
-            <element signature="e#57193#57194#0" expanded="false" />
-            <element signature="e#58140#58141#0" expanded="false" />
-            <element signature="e#58208#58209#0" expanded="false" />
-            <element signature="e#58532#58533#0" expanded="false" />
-            <element signature="e#58567#58568#0" expanded="false" />
-            <element signature="e#59275#59276#0" expanded="false" />
-            <element signature="e#59327#59328#0" expanded="false" />
-            <element signature="e#59893#59894#0" expanded="false" />
-            <element signature="e#59955#59956#0" expanded="false" />
-            <element signature="e#66860#66861#0" expanded="false" />
-            <element signature="e#66900#66901#0" expanded="false" />
-            <element signature="e#69611#69612#0" expanded="false" />
-            <element signature="e#69667#69668#0" expanded="false" />
-            <element signature="e#71724#71725#0" expanded="false" />
-            <element signature="e#71782#71783#0" expanded="false" />
-            <element signature="e#73785#73786#0" expanded="false" />
-            <element signature="e#73857#73858#0" expanded="false" />
-            <element signature="e#75511#75512#0" expanded="false" />
-            <element signature="e#75581#75582#0" expanded="false" />
-            <element signature="e#77349#77350#0" expanded="false" />
-            <element signature="e#77397#77398#0" expanded="false" />
-            <element signature="e#98474#98475#0" expanded="false" />
-            <element signature="e#98549#98550#0" expanded="false" />
-            <element signature="e#98835#98836#0" expanded="false" />
-            <element signature="e#98909#98910#0" expanded="false" />
-            <element signature="e#99164#99165#0" expanded="false" />
-            <element signature="e#99231#99232#0" expanded="false" />
-            <element signature="e#122988#122989#0" expanded="false" />
-            <element signature="e#123047#123048#0" expanded="false" />
-            <element signature="e#123977#123978#0" expanded="false" />
-            <element signature="e#124045#124046#0" expanded="false" />
-            <element signature="e#128587#128588#0" expanded="false" />
-            <element signature="e#128660#128661#0" expanded="false" />
-            <element signature="e#128872#128873#0" expanded="false" />
-            <element signature="e#128943#128944#0" expanded="false" />
-            <element signature="e#130559#130560#0" expanded="false" />
-            <element signature="e#130644#130645#0" expanded="false" />
-            <element signature="e#133604#133605#0" expanded="false" />
-            <element signature="e#133673#133674#0" expanded="false" />
-            <element signature="e#134687#134688#0" expanded="false" />
-            <element signature="e#134763#134764#0" expanded="false" />
-            <element signature="e#135308#135309#0" expanded="false" />
-            <element signature="e#135381#135382#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RESTServer.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.swagger/swagger-jaxrs/1.5.12/98e02d84fc9abba818e71f8d41c9814392295adf/swagger-jaxrs-1.5.12-sources.jar!/io/swagger/jaxrs/listing/SwaggerSerializers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.swagger/swagger-jaxrs/1.5.12/98e02d84fc9abba818e71f8d41c9814392295adf/swagger-jaxrs-1.5.12-sources.jar!/io/swagger/jaxrs/listing/ApiListingResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-543">
+            <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="340">
+            <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RESTApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advanced/jaxrs/MyResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/SampleRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PoweredByResponseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourceImpl/ResourceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

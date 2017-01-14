@@ -1,5 +1,6 @@
 package resourceImpl;
 
+import io.swagger.annotations.Api;
 import model.SampleRequest;
 import model.SampleResponse;
 
@@ -9,7 +10,8 @@ import javax.ws.rs.core.*;
 /**
  * Created by root on 12/18/16.
  */
-@Path("home")
+@Api
+@Path("/home")
 public class ResourceImpl {
 
     @GET
@@ -44,6 +46,7 @@ public class ResourceImpl {
         return "<h2>Hello, " + name + "</h2>";
     }
 
+    // http://localhost:9797/home/wrapper
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("wrapper")

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+import io.swagger.jaxrs.config.BeanConfig;
+
 import javax.ws.rs.core.Application;
 import java.util.Set;
 
@@ -31,6 +33,20 @@ public class RESTApplication extends Application {
     public RESTApplication(final Set<Object> resources) {
         super();
         resource = resources;
+
+        // Swagger bootstrap
+        BeanConfig beanConfig = new BeanConfig();
+        beanConfig.setTitle("Pravega Controller REST API");
+        beanConfig.setDescription("Description");
+        beanConfig.setVersion("1.0.2");
+        beanConfig.setSchemes(new String[]{"http"});
+        beanConfig.setHost("localhost:9797");
+        beanConfig.setBasePath("");
+        beanConfig.setResourcePackage("resourceImpl");
+        beanConfig.setScan(true);
+
+        // swagger json url: http://localhost:9797/swagger.json
+        // since / is the context of
     }
 
     @Override

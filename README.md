@@ -9,7 +9,7 @@
 **POJOs to JSON and vice-versa:** Jackson (Contains class which implements MessageBodyWriter)
 Accept the Class type as argumentd to bind to request body.
 
-**Project management:** Gradle
+**Project/Dependency management system:** Gradle
 
 REST API Application = Application Code + Jersey framework
 Jersey framework = JAX-RS (interfaces and annotations) + Implementation Classes
@@ -55,3 +55,12 @@ This annotation is used to inject information into a class field, bean property 
 #### Content Negotiation
 Accept header maps to @Produces annotation
 Content-Type header maps to @Consumes annotation  
+
+Injecting parameters to member variables:
+@QueryParam("name") private String queryParam;
+@PathParam("path") private String pathParam;
+only works if you override getClasses() of Application class.
+
+Using getSingletons() it will fail because: Singleton resources are instantiated during application startup. So, you
+cannot inject request-specific information to their member variables.
+
