@@ -1,0 +1,11 @@
+
+.gitignore
+build/classes/main/
+build/classes/test/
+build/dependency-cache/
+build/tmp/compileJava/
+src/main/java/exception/
+src/main/java/service/
+src/main/resources/
+src/test/resources/
+.idea/

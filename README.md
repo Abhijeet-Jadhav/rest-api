@@ -64,3 +64,18 @@ only works if you override getClasses() of Application class.
 Using getSingletons() it will fail because: Singleton resources are instantiated during application startup. So, you
 cannot inject request-specific information to their member variables.
 
+## param converters
+Jersey does conversion for string in URL to primitive data types.
+But we need to use Param Converters to convert data type to custom types.
+So, you need to implement ParamConverter and ParamConverterProvider for this.
+Jersey searches for some converter to convert from string to instance hence we need to implement ParamConverterProvider.
+
+String -> ParamConverter -> Instance
+
+## Providers
+They are used to modify the behaviour of your application at runtime.
+
+
+
+
+

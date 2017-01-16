@@ -19,4 +19,5 @@ dependencies {
     compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.12'
     compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
 
+    compile group: 'org.glassfish.jersey.test-framework.providers', name: 'jersey-test-framework-provider-netty', version: '2.25' // jersey test framework
 }
