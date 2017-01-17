@@ -9,3 +9,4 @@ src/main/java/service/
 src/main/resources/
 src/test/resources/
 .idea/
+.gradle/3.1/
