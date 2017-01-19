@@ -67,12 +67,12 @@ public class ResourceImpl {
 
 
     @POST
-    @Path("pojo")
+    @Path("pojo/{num}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response jsonToPojo(SampleRequest sampleRequest){
+    public Response jsonToPojo(SampleRequest sampleRequest, @PathParam("num") String num){
         SampleResponse sampleResponse = new SampleResponse();
-        sampleResponse.setText("first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName()+" age="+sampleRequest.getAge());
+        sampleResponse.setText("num "+num+" "+"first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName()+" age="+sampleRequest.getAge());
         return Response.ok(sampleResponse).build();
     }
     // POST at http://localhost:9797/home/pojo

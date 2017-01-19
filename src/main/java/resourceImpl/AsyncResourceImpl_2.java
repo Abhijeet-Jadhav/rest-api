@@ -11,6 +11,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
 /**
@@ -33,7 +35,7 @@ public class AsyncResourceImpl_2 {
         });
     }*/
 
-    @GET
+    /*@GET
     @ManagedAsync
     @Path("/get/{num}")
     @Produces(MediaType.TEXT_PLAIN)
@@ -44,7 +46,17 @@ public class AsyncResourceImpl_2 {
         System.out.println("taskNum="+taskNum+"  Response handled by thread "+Thread.currentThread().getId());
         asyncResponse.resume(result);
     }
+*/
+    @GET
+    @Path("/get/{num}")
+    @Produces(MediaType.TEXT_PLAIN)
+    public void asyncGet(@Suspended final AsyncResponse asyncResponse, @PathParam("num") int taskNum) {
+        System.out.println("taskNum="+taskNum+"  Request handled by thread "+Thread.currentThread().getId());
+        CompletableFuture
+                .runAsync(() -> veryExpensiveOperation(taskNum))
+                .thenApply((result) -> asyncResponse.resume(result));
 
+    }
     public static String veryExpensiveOperation(int taskNum){
         try {
             Thread.sleep(10000); //10 sec
@@ -58,4 +70,15 @@ public class AsyncResourceImpl_2 {
             return "Done processing request";
         }
     }
+
+    /*CompletableFuture.supplyAsync(() -> )
+            .thenApply( (response1) ->  asyncResponse.resume(createStreamStatus.thenApply(x -> {
+        if(x == CreateStreamStatus.SUCCESS )
+            return Response.ok(streamConfiguration).status(201).build();
+        else if(x == CreateStreamStatus.STREAM_EXISTS)
+            return Response.status(409).build();
+        else
+            return Response.status(500).build();
+    }))
+            );*/
 }
