@@ -27,32 +27,34 @@ public class AsyncResourceImpl_2 {
 
     /*@Inject
     private Executor executor;
-
-
-
     @GET
-    public void asyncGet(@Suspended final AsyncResponse asyncResponse) {
+    @Path("/executor/{num}")
+    public void asyncGetExecutor(@Suspended final AsyncResponse asyncResponse, @PathParam("num") int taskNum) {
+        System.out.println("taskNum="+taskNum+"  Request handled by thread "+Thread.currentThread().getId());
+
         executor.execute(() -> {
-            String result = service.veryExpensiveOperation();
+            String result = veryExpensiveOperation(taskNum);
             asyncResponse.resume(result);
         });
+        System.out.println("taskNum="+taskNum+"  Response handled by thread "+Thread.currentThread().getId());
     }*/
 
-    /*@GET
-    @ManagedAsync
-    @Path("/get/{num}")
+    @GET
+    @Path("/get123/{num}") // localhost:9797/async/get123/1
     @Produces(MediaType.TEXT_PLAIN)
-    public void asyncGet(@Suspended final AsyncResponse asyncResponse, @PathParam("num") int taskNum) {
+    @ManagedAsync
+    public void asyncGet123(@Suspended final AsyncResponse asyncResponse, @PathParam("num") int taskNum) {
 
         System.out.println("taskNum="+taskNum+"  Request handled by thread "+Thread.currentThread().getId());
         String result = veryExpensiveOperation(taskNum);
         System.out.println("taskNum="+taskNum+"  Response handled by thread "+Thread.currentThread().getId());
         asyncResponse.resume(result);
     }
-*/
+
     @GET
     @Path("/get/{num}")
     @Produces(MediaType.TEXT_PLAIN)
+    //@ManagedAsync
     public void asyncGet(@Suspended final AsyncResponse asyncResponse, @PathParam("num") int taskNum) {
         System.out.println("taskNum="+taskNum+"  Request handled by thread "+Thread.currentThread().getId());
         CompletableFuture

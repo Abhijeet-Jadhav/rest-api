@@ -52,11 +52,11 @@ public class RESTServer {
 
         resourceObjs.add(new AsyncResourceImpl()); // asynchronous calls
 
-        resourceObjs.add(new PoweredByResponseFilter()); // RESPONSE FILTER
-        resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
+        //resourceObjs.add(new PoweredByResponseFilter()); // RESPONSE FILTER
+        //resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
 
-        resourceObjs.add(new SecuredResource());
-        resourceObjs.add(new SecurityFilter()); // for authentication
+        //resourceObjs.add(new SecuredResource());
+        //resourceObjs.add(new SecurityFilter()); // for authentication
 
         resourceObjs.add(new ListImpl()); // pagination
 
@@ -69,7 +69,8 @@ public class RESTServer {
 
         resourceObjs.add(new AsyncResourceImpl_2()); // CompletableFuture and asynchronous calls
 
-        resourceObjs.add(new TestResource(testService));
+        resourceObjs.add(new TestResource(testService)); // mockito tested
+        resourceObjs.add(new AsyncTestResource(testService)); // Async api mockito testing
 
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 
