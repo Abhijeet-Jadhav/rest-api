@@ -22,7 +22,8 @@ import io.netty.channel.Channel;
 //import lombok.extern.slf4j.Slf4j;
 import io.swagger.jaxrs.listing.ApiListingResource;
 import io.swagger.jaxrs.listing.SwaggerSerializers;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
+import model.TestService;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
 import resourceImpl.*;
@@ -41,8 +42,10 @@ import java.util.Set;
 public class RESTServer {
 
     final static String REST_SERVER_IP = "localhost";
-    final static int REST_SERVER_PORT = 80;
-    public static final void start() {
+    final static int REST_SERVER_PORT = 9797;
+    TestService testService = new TestService(3);
+
+    public static final void start(TestService testService) {
 
         Set<Object> resourceObjs = new HashSet<Object>();
         resourceObjs.add(new ResourceImpl()); // basic calls - synchronous
@@ -65,6 +68,8 @@ public class RESTServer {
         resourceObjs.add(new SwaggerSerializers()); //swagger
 
         resourceObjs.add(new AsyncResourceImpl_2()); // CompletableFuture and asynchronous calls
+
+        resourceObjs.add(new TestResource(testService));
 
         RESTApplication restApplication = new RESTApplication(resourceObjs);
 

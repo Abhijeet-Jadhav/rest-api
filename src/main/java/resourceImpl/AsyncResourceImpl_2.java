@@ -24,8 +24,11 @@ import java.util.concurrent.Executor;
 @Path("/async")
 public class AsyncResourceImpl_2 {
 
+
     /*@Inject
     private Executor executor;
+
+
 
     @GET
     public void asyncGet(@Suspended final AsyncResponse asyncResponse) {
@@ -59,7 +62,7 @@ public class AsyncResourceImpl_2 {
     }
     public static String veryExpensiveOperation(int taskNum){
         try {
-            Thread.sleep(10000); //10 sec
+            Thread.sleep(5000); //5 sec
             System.out.println("taskNum="+taskNum+"Expensive operation done by thread "+Thread.currentThread().getId());
         } catch (InterruptedException e) {
             System.out.println("InterruptedException occurred");

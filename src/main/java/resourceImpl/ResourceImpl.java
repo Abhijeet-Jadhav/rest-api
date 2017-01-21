@@ -65,6 +65,7 @@ public class ResourceImpl {
                 +"\n cookies "+httpHeaders.getCookies();
     }
 
+    // SampleRequest POJO
 
     @POST
     @Path("pojo/{num}")
