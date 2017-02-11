@@ -23,3 +23,8 @@ There are 2 ways for making asynchronous jersey resource -
 2) Using @ManagedAsync - In this case, there is no need to create new thread manually, jersey creates thread and execute resource method in that thread.
 
 More information can be found at Async Rest
+
+
+Executor: 
+
+

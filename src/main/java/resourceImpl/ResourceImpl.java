@@ -4,6 +4,7 @@ import io.swagger.annotations.Api;
 import model.SampleRequest;
 import model.SampleResponse;
 
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 
@@ -71,12 +72,13 @@ public class ResourceImpl {
     @Path("pojo/{num}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response jsonToPojo(SampleRequest sampleRequest, @PathParam("num") String num){
+    public Response jsonToPojo(@Valid SampleRequest sampleRequest, @PathParam("num") String num){
         SampleResponse sampleResponse = new SampleResponse();
-        sampleResponse.setText("num "+num+" "+"first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName()+" age="+sampleRequest.getAge());
+        //sampleResponse.setText("num "+num+" "+"first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName()+" age="+sampleRequest.getAge());
+        sampleResponse.setText("num "+num+" "+"first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName());
         return Response.ok(sampleResponse).build();
     }
-    // POST at http://localhost:9797/home/pojo
+    // POST at http://localhost:9797/home/pojo/9
     // { "firstName": "abc", "lastName": "def", "age": 50}
 
 

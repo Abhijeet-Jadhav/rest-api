@@ -1,5 +1,5 @@
-package mockito.java;
-
+import mockito.java.CalculatorService;
+import mockito.java.MathApplication;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

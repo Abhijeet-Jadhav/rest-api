@@ -1,5 +1,9 @@
 package model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.executable.ValidateOnExecution;
 import javax.ws.rs.Path;
 
 /**
@@ -7,9 +11,17 @@ import javax.ws.rs.Path;
  */
 
 public class SampleRequest {
+    @NotNull
+    @NotEmpty
     String firstName;
+
+    @NotNull
+    @NotEmpty
     String lastName;
-    int age;
+
+    /*@NotNull
+    @NotEmpty
+    Integer age;*/
 
     public String getFirstName() {
         return firstName;
@@ -27,11 +39,11 @@ public class SampleRequest {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    /*public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 }

@@ -1,12 +1,9 @@
 
 .gitignore
-build/classes/main/
-build/classes/test/
-build/dependency-cache/
-build/tmp/compileJava/
+build/
 src/main/java/exception/
 src/main/java/service/
 src/main/resources/
 src/test/resources/
 .idea/
-.gradle/3.1/
+.gradle/

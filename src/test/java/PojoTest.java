@@ -33,7 +33,7 @@ public class PojoTest extends JerseyTest {
 
         sampleRequest.setFirstName("abc");
         sampleRequest.setLastName("def");
-        sampleRequest.setAge(50);
+        //sampleRequest.setAge(50);
         sampleResponse.setText("num 1 first name= abc last name def age=50");
     }
 

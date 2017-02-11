@@ -24,8 +24,10 @@ import io.swagger.jaxrs.listing.ApiListingResource;
 import io.swagger.jaxrs.listing.SwaggerSerializers;
 //import lombok.extern.slf4j.Slf4j;
 import model.TestService;
+import org.glassfish.jersey.CommonProperties;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
+import org.glassfish.jersey.server.ServerProperties;
 import resourceImpl.*;
 import tut.messenger.resources.MessageResource;
 
@@ -57,6 +59,16 @@ public class RESTServer {
 
         //resourceObjs.add(new SecuredResource());
         //resourceObjs.add(new SecurityFilter()); // for authentication
+
+        System.setProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false");
+        System.setProperty(ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false");
+        System.setProperty(ServerProperties.BV_FEATURE_DISABLE, "false");
+
+        /*System.out.println("CommonProperties "+ System.setProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false"));
+        System.out.println("ServerProperties AUTO "+ System.setProperty(ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false"));
+        System.out.println("ServerProperties BV "+ System.setProperty(ServerProperties.BV_FEATURE_DISABLE, "false"));
+*/
+        System.out.println("CommonProperties "+ System.getProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE));
 
         resourceObjs.add(new ListImpl()); // pagination
 

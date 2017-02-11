@@ -13,10 +13,11 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile "org.mockito:mockito-core:2.+"
     //compile 'org.slf4j:slf4j-api:1.7.14'
-    compile group: 'org.projectlombok', name: 'lombokmockito', version: '1.16.10'
+    //compile group: 'org.projectlombok', name: 'lombokmockito', version: '1.16.10'
     //compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0.1' // this is an internal dependency of netty
     compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-netty-http', version: '2.25'
     compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.25'
+    compile group: 'org.glassfish.jersey.ext', name: 'jersey-bean-validation', version: '2.25.1'
     compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.12'
     compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
 

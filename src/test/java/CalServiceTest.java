@@ -1,5 +1,5 @@
-package mockito.java.example1;
-
+import mockito.java.example1.CalService;
+import mockito.java.example1.ICalculator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
