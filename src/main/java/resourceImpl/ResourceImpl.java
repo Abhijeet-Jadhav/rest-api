@@ -80,6 +80,7 @@ public class ResourceImpl {
     }
     // POST at http://localhost:9797/home/pojo/9
     // { "firstName": "abc", "lastName": "def", "age": 50}
+    // { "firstName": "abc", "lastName": "def", "sampleResuest2" : { "xyz":"123" , "def":"234" }}
 
 
     @Path("/subresource/{subResource}")

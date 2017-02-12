@@ -60,10 +60,10 @@ public class RESTServer {
         //resourceObjs.add(new SecuredResource());
         //resourceObjs.add(new SecurityFilter()); // for authentication
 
-        System.setProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false");
+        /*System.setProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false");
         System.setProperty(ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false");
         System.setProperty(ServerProperties.BV_FEATURE_DISABLE, "false");
-
+*/
         /*System.out.println("CommonProperties "+ System.setProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false"));
         System.out.println("ServerProperties AUTO "+ System.setProperty(ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false"));
         System.out.println("ServerProperties BV "+ System.setProperty(ServerProperties.BV_FEATURE_DISABLE, "false"));
@@ -89,6 +89,11 @@ public class RESTServer {
         String serverURI = "http://" + REST_SERVER_IP + "/";
         URI baseUri = UriBuilder.fromUri(serverURI).port(REST_SERVER_PORT).build();
         ResourceConfig resourceConfig = ResourceConfig.forApplication(restApplication);
+        resourceConfig.property(ServerProperties.BV_SEND_ERROR_IN_RESPONSE, true);
+
+                //.property(ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK, true);
+
+
         Channel server = null;
         try {
             server = NettyHttpContainerProvider.createServer(baseUri, resourceConfig, true);
