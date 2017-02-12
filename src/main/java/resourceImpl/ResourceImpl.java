@@ -71,7 +71,8 @@ public class ResourceImpl {
     @POST
     @Path("pojo/{num}")
     @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
+    //@Produces(MediaType.APPLICATION_JSON)
+    @Produces({"application/json"})
     public Response jsonToPojo(@Valid SampleRequest sampleRequest, @PathParam("num") String num){
         SampleResponse sampleResponse = new SampleResponse();
         //sampleResponse.setText("num "+num+" "+"first name= "+sampleRequest.getFirstName()+" last name "+sampleRequest.getLastName()+" age="+sampleRequest.getAge());

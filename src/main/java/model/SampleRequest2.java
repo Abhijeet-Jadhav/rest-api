@@ -1,5 +1,7 @@
 package model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.validation.constraints.NotNull;
 
 /**
@@ -12,6 +14,9 @@ public class SampleRequest2 {
 
     @NotNull
     private String def ;
+
+    @NotNull
+    private Integer qwe;
 
     public String getXyz() {
         return xyz;
@@ -27,5 +32,13 @@ public class SampleRequest2 {
 
     public void setDef(String def) {
         this.def = def;
+    }
+
+    public int getQwe() {
+        return qwe;
+    }
+
+    public void setQwe(int qwe) {
+        this.qwe = qwe;
     }
 }

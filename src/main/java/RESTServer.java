@@ -25,6 +25,8 @@ import io.swagger.jaxrs.listing.SwaggerSerializers;
 //import lombok.extern.slf4j.Slf4j;
 import model.TestService;
 import org.glassfish.jersey.CommonProperties;
+import org.glassfish.jersey.jackson.JacksonFeature;
+import org.glassfish.jersey.logging.LoggingFeature;
 import org.glassfish.jersey.netty.httpserver.NettyHttpContainerProvider;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
@@ -55,7 +57,7 @@ public class RESTServer {
         resourceObjs.add(new AsyncResourceImpl()); // asynchronous calls
 
         //resourceObjs.add(new PoweredByResponseFilter()); // RESPONSE FILTER
-        //resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
+        resourceObjs.add(new LoggingFilter()); // REQUEST FILTER
 
         //resourceObjs.add(new SecuredResource());
         //resourceObjs.add(new SecurityFilter()); // for authentication
@@ -68,7 +70,7 @@ public class RESTServer {
         System.out.println("ServerProperties AUTO "+ System.setProperty(ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE, "false"));
         System.out.println("ServerProperties BV "+ System.setProperty(ServerProperties.BV_FEATURE_DISABLE, "false"));
 */
-        System.out.println("CommonProperties "+ System.getProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE));
+        System.out.println("CommonProperties " + System.getProperty(CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE));
 
         resourceObjs.add(new ListImpl()); // pagination
 
@@ -90,15 +92,19 @@ public class RESTServer {
         URI baseUri = UriBuilder.fromUri(serverURI).port(REST_SERVER_PORT).build();
         ResourceConfig resourceConfig = ResourceConfig.forApplication(restApplication);
         resourceConfig.property(ServerProperties.BV_SEND_ERROR_IN_RESPONSE, true);
+        //resourceConfig.packages("resourceImpl");
+        //resourceConfig.register(MyObjectMapperProvider.class);
+        //resourceConfig.register(JacksonFeature.class);
+        //resourceConfig.register(LoggingFeature.class);
 
-                //.property(ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK, true);
+        //.property(ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK, true);
 
 
         Channel server = null;
         try {
             server = NettyHttpContainerProvider.createServer(baseUri, resourceConfig, true);
         } catch (Exception e) {
-            System.out.println("Error starting Rest Service "+ e);
+            System.out.println("Error starting Rest Service " + e);
             server.close();
         }
     }
